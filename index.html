@@ -28,9 +28,13 @@
 		#htt h1,#htt p{color:#FFFFFF;
 	text-shadow:2px 3px 2px #333333;
 	text-align:center;}
+	#htt h1{padding-top:5%;}
 	#htt{text-align:center;}
 	footer{padding:3%;background:#CCFF66;}
 		</style>
+		<script src="javascripts/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="javascripts/swfobject.js"> </script>
+		<script type="text/javascript" src="core.js"></script>
 	</head>
 	<body>
 		<header id="header">
@@ -50,55 +54,30 @@
 				</section>
 				-->
 			</nav>
-			<section >
+			<section>
 				<div class="htdad" id="htt">
 					<h1 >ChinaJoy Cosplay大赛</h1>
 					<p>熊爪动漫网-2016ChinaJoyCosplay嘉年华直播现场！</p>
-					<a href="http://www.huya.com/1774104551" target="_blank">
-					<button type="button" class="button round">点击此处进入直播间</button>
-					</a>
-					<p>下面有直接的播放窗口哟！↓不支持的手机用户请戳按钮↑</p>
+					<div align="center">
+						<div id="woan_player">
+							<p style="padding:10%;">
+								很抱歉由于天然呆用的是移动端（反正不是电脑），建议点击下面的按钮去直播间观看！<br>
+								<a href="http://www.huya.com/1774104551" target="_blank">
+								<button type="button" class="button round">请点击此处进入直播间</button>
+								</a>
+							</p>
+						</div>
+						<div>
+							<!--<input type="button" id="btn_pp"  value="播放" data-player-id=""></input>-->
+							<!--rtmp://119.147.180.57/live/cosplay-->
+							<a href="http://dbacg.com/" target="_blank"><button class="btn btn-primary play btn-small" data="rtmp://119.147.180.57/live/cosplay" >熊爪动漫网</button></a>
+							<a href="http://acgbag.com/" target="_blank"><button class="btn btn-primary play btn-small" data="rtmp://119.147.180.57/live/cosplay" >AcgBag</button></a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</header>
-		<section class=" bgh1">
-			<section class="row pa10 " >
-			<h2 class="center ">2016ChinaJoyCosplay嘉年华直播画面</h2>
-			
-	<embed width="100%" height="500" allownetworking="all" allowscriptaccess="always" 
-src="http://weblbs.yystatic.com/s/78941969/2551842647/huyacoop.swf" quality="high" 
-bgcolor="#000" wmode="window" allowfullscreen="true" allowFullScreenInteractive="true" >			<!--
-				<section class="medium-4 columns">
-					<h3 class="center"> <i class="fi-home"></i>1</h3>
-					<p>1</p>
-				</section>
-				<section class="medium-4 columns">
-					<h3 class="center"><i class="fi-checkbox"></i>2</h3>
-					<p>2</p>
-				</section>
-				<section class="medium-4 columns">
-					<h3 class="center"><i class="fi-heart"></i>3</h3>
-					<p>3</p>
-				</section>-->
-				
-			</section>
-			
-		</section>
-		<!--
-		<section style="background:#FFFFFF" class="pa10">
-			<section class="row">
-				<section class="medium-8 columns">
-					<h2>4</h2>
-					<hr>
-					<p>4</p>
-				</section>
-				<section class="medium-4 columns">
-					<img src="https://tat.pics/v/1466256915100crp.jpg">
-				</section>
-			</section>
-		</section>
-		-->
-		<footer id="footer">
+		<footer id="footer" style="padding-top:5%;">
 		<a href="http://acgbag.com" target="_blank">本页面技术支持：AcgBag - ShellV·泡</a>
 		</footer>
 	</body>
@@ -107,7 +86,7 @@ bgcolor="#000" wmode="window" allowfullscreen="true" allowFullScreenInteractive=
 		var 半个高度 = 高度*0.35;
 		var 半半个高度 = 高度*0.1;
 		document.getElementById("header").style.height=高度+"px";
-		document.getElementById("htt").style.padding=半个高度+"px"+" 0 0 0";
+		//document.getElementById("").style.padding=半个高度+"px"+" 0 0 0";
 		
 	</script>
 </html>
